@@ -21,35 +21,55 @@ namespace ConsoleAppFunctionOperacoes
             string op = Console.ReadLine();
 
 
-            ope(n1 , n2, op);
+            operacao(n1 , n2, op);
 
             Console.ReadKey();
         }
 
-        static void ope(double n1, double n2, string op) 
+        static void operacao(double n1, double n2, string op) 
         {
             double resultado;
             switch (op)
             {
                 case "+": 
                     resultado = n1 + n2;
+
                     Console.WriteLine("O resultado da sua soma é: "+resultado);
+
                 break;
 
+
                 case "-":
+
                     resultado = n1 - n2;
+
                     Console.WriteLine("O resultado da subtração é: " + resultado);
+
                 break;
+
+
                 case "*":
+
                     resultado = n1 * n2;
+
                     Console.WriteLine("O resultado da multiplicação é: " + resultado);
+
                 break;
+
+
                 case "/":
+
                     resultado = n1 / n2;
+
                     Console.WriteLine("O resultado da divisão é: " + resultado);
+
                 break;
-                default: 
+
+
+                default:
+                    
                     Console.WriteLine("Operação inserida inválida ");
+
                 break;
             }
         }
